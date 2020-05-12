@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "The Walking Monster/*"
-      - "The Walking Monster/*/*"
-      - "The Walking Monster/*/*/*"
+    # paths:
+    #   - "The Walking Monster/*"
+    #   - "The Walking Monster/*/*"
+    #   - "The Walking Monster/*/*/*"
 
 jobs:
   # ios-lint:

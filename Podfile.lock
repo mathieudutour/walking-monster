@@ -1,0 +1,21 @@
+PODS:
+  - BulletinBoard (3.0.0)
+  - SwiftFormat/CLI (0.40.7)
+  - SwiftGifOrigin (1.7.0)
+  - SwiftLint (0.31.0)
+
+DEPENDENCIES:
+  - BulletinBoard
+  - SwiftFormat/CLI
+  - SwiftGifOrigin
+  - SwiftLint
+
+SPEC CHECKSUMS:
+  BulletinBoard: 927f4f9fd22503ceecd71bfc830fd65d5996593a
+  SwiftFormat: 93264523d31b70e5bc109c00ceeda3ae613a59d1
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+
+PODFILE CHECKSUM: 9ad88aeb31cc9e03d9991642b329e0273857e6fd
+
+COCOAPODS: 1.4.0

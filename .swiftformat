@@ -1,0 +1,12 @@
+# options
+--self remove # redundantSelf
+--importgrouping testable-bottom # sortedImports
+--commas always # trailingCommas
+--trimwhitespace always # trailingSpace
+--indent 2 # indentation
+
+# file options
+--exclude Pods,Carthage
+
+# rules
+--rules redundantParens,redundantSelf,sortedImports,trailingCommas,trailingSpace, indent

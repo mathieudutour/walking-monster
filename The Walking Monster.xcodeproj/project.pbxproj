@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0333B3EE20ED115B00C3AB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333B3ED20ED115B00C3AB68 /* AppDelegate.swift */; };
-		0333B3F020ED115B00C3AB68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333B3EF20ED115B00C3AB68 /* ViewController.swift */; };
+		0333B3F020ED115B00C3AB68 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333B3EF20ED115B00C3AB68 /* OnboardingController.swift */; };
 		0333B3F320ED115B00C3AB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0333B3F120ED115B00C3AB68 /* Main.storyboard */; };
 		0333B3F520ED115E00C3AB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0333B3F420ED115E00C3AB68 /* Assets.xcassets */; };
 		0333B3F820ED115E00C3AB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0333B3F620ED115E00C3AB68 /* LaunchScreen.storyboard */; };
 		0333B40320ED115F00C3AB68 /* The_Walking_MonsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333B40220ED115F00C3AB68 /* The_Walking_MonsterTests.swift */; };
 		0333B40E20ED115F00C3AB68 /* The_Walking_MonsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333B40D20ED115F00C3AB68 /* The_Walking_MonsterUITests.swift */; };
+		0333B41E20ED124500C3AB68 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333B41D20ED124500C3AB68 /* Redux.swift */; };
+		0333B42020ED128300C3AB68 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333B41F20ED128300C3AB68 /* Actions.swift */; };
+		0333B42220ED12E600C3AB68 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333B42120ED12E600C3AB68 /* State.swift */; };
+		0333B42420ED134000C3AB68 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333B42320ED134000C3AB68 /* Subscriber.swift */; };
+		0398118220ED161100DB8E85 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0398118120ED161100DB8E85 /* GameKit.framework */; };
+		0398118420ED161D00DB8E85 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0398118320ED161D00DB8E85 /* HealthKit.framework */; };
+		0398118B20ED333200DB8E85 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398118A20ED333200DB8E85 /* Router.swift */; };
+		0398118F20ED77EC00DB8E85 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398118E20ED77EC00DB8E85 /* Colors.swift */; };
+		0398119320ED8A4700DB8E85 /* WalkingMonster.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0398119220ED8A4600DB8E85 /* WalkingMonster.gif */; };
+		0398119520EDA0FA00DB8E85 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398119420EDA0FA00DB8E85 /* MainController.swift */; };
+		0398119720F2DFFC00DB8E85 /* Redux+storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398119620F2DFFC00DB8E85 /* Redux+storage.swift */; };
+		32CE9B4185187ED6AFBFE496 /* Pods_The_Walking_MonsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703ADEBC4304EF5E46A0AE0 /* Pods_The_Walking_MonsterTests.framework */; };
+		8E74998EEAA4EC1B076CA087 /* Pods_The_Walking_MonsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DA9BF8EC6BFEE1CAE070F6 /* Pods_The_Walking_MonsterUITests.framework */; };
+		EFCFFC0153B67F8193170DD2 /* Pods_The_Walking_Monster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DCA5633C77D2B068A4B283 /* Pods_The_Walking_Monster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +50,7 @@
 /* Begin PBXFileReference section */
 		0333B3EA20ED115B00C3AB68 /* The Walking Monster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Walking Monster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0333B3ED20ED115B00C3AB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0333B3EF20ED115B00C3AB68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0333B3EF20ED115B00C3AB68 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		0333B3F220ED115B00C3AB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0333B3F420ED115E00C3AB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0333B3F720ED115E00C3AB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,28 @@
 		0333B40920ED115F00C3AB68 /* The Walking MonsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Walking MonsterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0333B40D20ED115F00C3AB68 /* The_Walking_MonsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Walking_MonsterUITests.swift; sourceTree = "<group>"; };
 		0333B40F20ED115F00C3AB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0333B41D20ED124500C3AB68 /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		0333B41F20ED128300C3AB68 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		0333B42120ED12E600C3AB68 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		0333B42320ED134000C3AB68 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
+		0398118120ED161100DB8E85 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		0398118320ED161D00DB8E85 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		0398118520ED161D00DB8E85 /* The Walking Monster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "The Walking Monster.entitlements"; sourceTree = "<group>"; };
+		0398118620ED162F00DB8E85 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0398118A20ED333200DB8E85 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		0398118E20ED77EC00DB8E85 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0398119220ED8A4600DB8E85 /* WalkingMonster.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WalkingMonster.gif; sourceTree = "<group>"; };
+		0398119420EDA0FA00DB8E85 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		0398119620F2DFFC00DB8E85 /* Redux+storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Redux+storage.swift"; sourceTree = "<group>"; };
+		0FD3272790AA1360AACB05AA /* Pods-The Walking Monster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking Monster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking Monster/Pods-The Walking Monster.debug.xcconfig"; sourceTree = "<group>"; };
+		1438A6683AA92E48CCE27DF8 /* Pods-The Walking MonsterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking MonsterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking MonsterUITests/Pods-The Walking MonsterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1703ADEBC4304EF5E46A0AE0 /* Pods_The_Walking_MonsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Walking_MonsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31DA9BF8EC6BFEE1CAE070F6 /* Pods_The_Walking_MonsterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Walking_MonsterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74278CA47A3250E71D95AFA /* Pods-The Walking MonsterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking MonsterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking MonsterTests/Pods-The Walking MonsterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE8D3AEF47C63D9335C7B85B /* Pods-The Walking MonsterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking MonsterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking MonsterUITests/Pods-The Walking MonsterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE02B663D7430AD7C56657A1 /* Pods-The Walking MonsterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking MonsterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking MonsterTests/Pods-The Walking MonsterTests.release.xcconfig"; sourceTree = "<group>"; };
+		F193D2484313F42C46DA0BDD /* Pods-The Walking Monster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking Monster.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking Monster/Pods-The Walking Monster.release.xcconfig"; sourceTree = "<group>"; };
+		F9DCA5633C77D2B068A4B283 /* Pods_The_Walking_Monster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Walking_Monster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0398118220ED161100DB8E85 /* GameKit.framework in Frameworks */,
+				0398118420ED161D00DB8E85 /* HealthKit.framework in Frameworks */,
+				EFCFFC0153B67F8193170DD2 /* Pods_The_Walking_Monster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CE9B4185187ED6AFBFE496 /* Pods_The_Walking_MonsterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E74998EEAA4EC1B076CA087 /* Pods_The_Walking_MonsterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +122,8 @@
 				0333B40120ED115F00C3AB68 /* The Walking MonsterTests */,
 				0333B40C20ED115F00C3AB68 /* The Walking MonsterUITests */,
 				0333B3EB20ED115B00C3AB68 /* Products */,
+				0398118020ED161100DB8E85 /* Frameworks */,
+				4675276DD08EEB093A3823AC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +140,13 @@
 		0333B3EC20ED115B00C3AB68 /* The Walking Monster */ = {
 			isa = PBXGroup;
 			children = (
+				0398118520ED161D00DB8E85 /* The Walking Monster.entitlements */,
 				0333B3ED20ED115B00C3AB68 /* AppDelegate.swift */,
-				0333B3EF20ED115B00C3AB68 /* ViewController.swift */,
-				0333B3F120ED115B00C3AB68 /* Main.storyboard */,
+				0333B42520ED13CD00C3AB68 /* Components */,
+				0333B41C20ED121D00C3AB68 /* Redux */,
+				0333B41B20ED120200C3AB68 /* Views */,
 				0333B3F420ED115E00C3AB68 /* Assets.xcassets */,
+				0398119220ED8A4600DB8E85 /* WalkingMonster.gif */,
 				0333B3F620ED115E00C3AB68 /* LaunchScreen.storyboard */,
 				0333B3F920ED115E00C3AB68 /* Info.plist */,
 			);
@@ -125,6 +171,63 @@
 			path = "The Walking MonsterUITests";
 			sourceTree = "<group>";
 		};
+		0333B41B20ED120200C3AB68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0333B3F120ED115B00C3AB68 /* Main.storyboard */,
+				0398118A20ED333200DB8E85 /* Router.swift */,
+				0333B3EF20ED115B00C3AB68 /* OnboardingController.swift */,
+				0398119420EDA0FA00DB8E85 /* MainController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0333B41C20ED121D00C3AB68 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				0333B41D20ED124500C3AB68 /* Redux.swift */,
+				0398119620F2DFFC00DB8E85 /* Redux+storage.swift */,
+				0333B41F20ED128300C3AB68 /* Actions.swift */,
+				0333B42120ED12E600C3AB68 /* State.swift */,
+				0333B42320ED134000C3AB68 /* Subscriber.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		0333B42520ED13CD00C3AB68 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0398118E20ED77EC00DB8E85 /* Colors.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0398118020ED161100DB8E85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0398118620ED162F00DB8E85 /* StoreKit.framework */,
+				0398118320ED161D00DB8E85 /* HealthKit.framework */,
+				0398118120ED161100DB8E85 /* GameKit.framework */,
+				F9DCA5633C77D2B068A4B283 /* Pods_The_Walking_Monster.framework */,
+				1703ADEBC4304EF5E46A0AE0 /* Pods_The_Walking_MonsterTests.framework */,
+				31DA9BF8EC6BFEE1CAE070F6 /* Pods_The_Walking_MonsterUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4675276DD08EEB093A3823AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FD3272790AA1360AACB05AA /* Pods-The Walking Monster.debug.xcconfig */,
+				F193D2484313F42C46DA0BDD /* Pods-The Walking Monster.release.xcconfig */,
+				A74278CA47A3250E71D95AFA /* Pods-The Walking MonsterTests.debug.xcconfig */,
+				DE02B663D7430AD7C56657A1 /* Pods-The Walking MonsterTests.release.xcconfig */,
+				CE8D3AEF47C63D9335C7B85B /* Pods-The Walking MonsterUITests.debug.xcconfig */,
+				1438A6683AA92E48CCE27DF8 /* Pods-The Walking MonsterUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +235,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0333B41220ED115F00C3AB68 /* Build configuration list for PBXNativeTarget "The Walking Monster" */;
 			buildPhases = (
+				9FE3F59D95072BF1D1825237 /* [CP] Check Pods Manifest.lock */,
+				0387351122638BC9000C0910 /* Set up lint settings */,
+				0348D9B322638E0400559463 /* Run Swiftformat */,
+				0348D9B222638DB500559463 /* Run Swiftlint */,
 				0333B3E620ED115B00C3AB68 /* Sources */,
 				0333B3E720ED115B00C3AB68 /* Frameworks */,
 				0333B3E820ED115B00C3AB68 /* Resources */,
+				0980C9CD643D50674F788C27 /* [CP] Embed Pods Frameworks */,
+				68DA7AA4C129877D07D64779 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0333B41520ED115F00C3AB68 /* Build configuration list for PBXNativeTarget "The Walking MonsterTests" */;
 			buildPhases = (
+				F3A2728A43F74202D2548E05 /* [CP] Check Pods Manifest.lock */,
 				0333B3FA20ED115E00C3AB68 /* Sources */,
 				0333B3FB20ED115E00C3AB68 /* Frameworks */,
 				0333B3FC20ED115E00C3AB68 /* Resources */,
+				F7A40B338C928586F9970AE6 /* [CP] Embed Pods Frameworks */,
+				7C5A451650C649A07995AB43 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0333B41820ED115F00C3AB68 /* Build configuration list for PBXNativeTarget "The Walking MonsterUITests" */;
 			buildPhases = (
+				D72789FDC9F62F2820F1426F /* [CP] Check Pods Manifest.lock */,
 				0333B40520ED115F00C3AB68 /* Sources */,
 				0333B40620ED115F00C3AB68 /* Frameworks */,
 				0333B40720ED115F00C3AB68 /* Resources */,
+				571BB8E2821107894C8F4A1A /* [CP] Embed Pods Frameworks */,
+				6788F9881FDBAEC5DB184F97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,13 +308,36 @@
 				TargetAttributes = {
 					0333B3E920ED115B00C3AB68 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					0333B3FD20ED115E00C3AB68 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						TestTargetID = 0333B3E920ED115B00C3AB68;
 					};
 					0333B40820ED115F00C3AB68 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						TestTargetID = 0333B3E920ED115B00C3AB68;
 					};
 				};
@@ -230,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0333B3F820ED115E00C3AB68 /* LaunchScreen.storyboard in Resources */,
+				0398119320ED8A4700DB8E85 /* WalkingMonster.gif in Resources */,
 				0333B3F520ED115E00C3AB68 /* Assets.xcassets in Resources */,
 				0333B3F320ED115B00C3AB68 /* Main.storyboard in Resources */,
 			);
@@ -251,13 +390,263 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0348D9B222638DB500559463 /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		0348D9B322638E0400559463 /* Run Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftformat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" .\n";
+		};
+		0387351122638BC9000C0910 /* Set up lint settings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set up lint settings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\nset -e\n\ndefaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool YES\ndefaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool YES\n\ndefaults write com.apple.dt.Xcode DVTTextIndentTabWidth -int 2\ndefaults write com.apple.dt.Xcode DVTTextIndentWidth -int 2\n\ndefaults write com.apple.dt.Xcode DVTTextPageGuideLocation -int 100\n";
+		};
+		0980C9CD643D50674F788C27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-The Walking Monster/Pods-The Walking Monster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BLTNBoard.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BLTNBoard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Walking Monster/Pods-The Walking Monster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		571BB8E2821107894C8F4A1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Walking MonsterUITests/Pods-The Walking MonsterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6788F9881FDBAEC5DB184F97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Walking MonsterUITests/Pods-The Walking MonsterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68DA7AA4C129877D07D64779 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Walking Monster/Pods-The Walking Monster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C5A451650C649A07995AB43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Walking MonsterTests/Pods-The Walking MonsterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FE3F59D95072BF1D1825237 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Walking Monster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D72789FDC9F62F2820F1426F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Walking MonsterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3A2728A43F74202D2548E05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Walking MonsterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A40B338C928586F9970AE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Walking MonsterTests/Pods-The Walking MonsterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0333B3E620ED115B00C3AB68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0333B3F020ED115B00C3AB68 /* ViewController.swift in Sources */,
+				0333B3F020ED115B00C3AB68 /* OnboardingController.swift in Sources */,
+				0333B42020ED128300C3AB68 /* Actions.swift in Sources */,
+				0398119520EDA0FA00DB8E85 /* MainController.swift in Sources */,
 				0333B3EE20ED115B00C3AB68 /* AppDelegate.swift in Sources */,
+				0398118B20ED333200DB8E85 /* Router.swift in Sources */,
+				0333B42420ED134000C3AB68 /* Subscriber.swift in Sources */,
+				0398119720F2DFFC00DB8E85 /* Redux+storage.swift in Sources */,
+				0398118F20ED77EC00DB8E85 /* Colors.swift in Sources */,
+				0333B42220ED12E600C3AB68 /* State.swift in Sources */,
+				0333B41E20ED124500C3AB68 /* Redux.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,42 +817,53 @@
 		};
 		0333B41320ED115F00C3AB68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FD3272790AA1360AACB05AA /* Pods-The Walking Monster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Walking Monster/The Walking Monster.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 100;
 				DEVELOPMENT_TEAM = 8SEPFSC7S3;
 				INFOPLIST_FILE = "The Walking Monster/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.The-Walking-Monster";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.Clockwork-Escape";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0333B41420ED115F00C3AB68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F193D2484313F42C46DA0BDD /* Pods-The Walking Monster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Walking Monster/The Walking Monster.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 100;
 				DEVELOPMENT_TEAM = 8SEPFSC7S3;
 				INFOPLIST_FILE = "The Walking Monster/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.The-Walking-Monster";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.Clockwork-Escape";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		0333B41620ED115F00C3AB68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A74278CA47A3250E71D95AFA /* Pods-The Walking MonsterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -477,7 +877,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.The-Walking-MonsterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Walking Monster.app/The Walking Monster";
 			};
@@ -485,6 +885,7 @@
 		};
 		0333B41720ED115F00C3AB68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE02B663D7430AD7C56657A1 /* Pods-The Walking MonsterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,7 +899,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.The-Walking-MonsterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Walking Monster.app/The Walking Monster";
 			};
@@ -506,6 +907,7 @@
 		};
 		0333B41920ED115F00C3AB68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8D3AEF47C63D9335C7B85B /* Pods-The Walking MonsterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -518,7 +920,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.The-Walking-MonsterUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "The Walking Monster";
 			};
@@ -526,6 +928,7 @@
 		};
 		0333B41A20ED115F00C3AB68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1438A6683AA92E48CCE27DF8 /* Pods-The Walking MonsterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,7 +941,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.The-Walking-MonsterUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "The Walking Monster";
 			};

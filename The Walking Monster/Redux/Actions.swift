@@ -32,6 +32,32 @@ extension Redux {
     }
   }
 
+  static func onboardingDone() {
+    let instance = Redux.sharedInstance
+    instance.state.needToOnboard = false
+    instance.dispatch()
+  }
+}
+
+// MARK: - HealthKit
+extension Redux {
+  static func requestHealthKit(complete: @escaping (_ error: Error?) -> Void) {
+    let instance = Redux.sharedInstance
+    let allTypes = Set(arrayLiteral: WALKING_TYPE)
+
+    instance.healthStore?.requestAuthorization(toShare: Set(), read: allTypes) { _, error in
+      if let error = error {
+        complete(error)
+        return
+      }
+
+      instance.state.healthKitAuthorized = true
+      instance.enableHealthKitBackgroundFetch()
+
+      complete(nil)
+    }
+  }
+
   private func enableHealthKitBackgroundFetch() {
     let backgroundQuery = HKObserverQuery(sampleType: WALKING_TYPE, predicate: nil) { _, completionHandler, error in
       if let error = error {
@@ -63,33 +89,6 @@ extension Redux {
         print(error ?? "unknown error while enabling background delivery")
       }
     })
-  }
-}
-
-// MARK: - requestHealthKit
-
-extension Redux {
-  static func requestHealthKit(complete: @escaping (_ error: Error?) -> Void) {
-    let instance = Redux.sharedInstance
-    let allTypes = Set(arrayLiteral: WALKING_TYPE)
-
-    instance.healthStore?.requestAuthorization(toShare: Set(), read: allTypes) { _, error in
-      if let error = error {
-        complete(error)
-        return
-      }
-
-      instance.state.healthKitAuthorized = true
-      instance.enableHealthKitBackgroundFetch()
-
-      complete(nil)
-    }
-  }
-
-  static func onboardingDone() {
-    let instance = Redux.sharedInstance
-    instance.state.needToOnboard = false
-    instance.dispatch()
   }
 }
 

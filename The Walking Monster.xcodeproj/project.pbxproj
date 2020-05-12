@@ -25,6 +25,8 @@
 		0398119320ED8A4700DB8E85 /* WalkingMonster.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0398119220ED8A4600DB8E85 /* WalkingMonster.gif */; };
 		0398119520EDA0FA00DB8E85 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398119420EDA0FA00DB8E85 /* MainController.swift */; };
 		0398119720F2DFFC00DB8E85 /* Redux+storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0398119620F2DFFC00DB8E85 /* Redux+storage.swift */; };
+		03A0C4B4246ACDF7008B5A64 /* GameOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A0C4B3246ACDF7008B5A64 /* GameOverController.swift */; };
+		03A0C4B6246AFA94008B5A64 /* Redux+notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A0C4B5246AFA94008B5A64 /* Redux+notifications.swift */; };
 		32CE9B4185187ED6AFBFE496 /* Pods_The_Walking_MonsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1703ADEBC4304EF5E46A0AE0 /* Pods_The_Walking_MonsterTests.framework */; };
 		8E74998EEAA4EC1B076CA087 /* Pods_The_Walking_MonsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DA9BF8EC6BFEE1CAE070F6 /* Pods_The_Walking_MonsterUITests.framework */; };
 		EFCFFC0153B67F8193170DD2 /* Pods_The_Walking_Monster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DCA5633C77D2B068A4B283 /* Pods_The_Walking_Monster.framework */; };
@@ -74,6 +76,8 @@
 		0398119220ED8A4600DB8E85 /* WalkingMonster.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WalkingMonster.gif; sourceTree = "<group>"; };
 		0398119420EDA0FA00DB8E85 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		0398119620F2DFFC00DB8E85 /* Redux+storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Redux+storage.swift"; sourceTree = "<group>"; };
+		03A0C4B3246ACDF7008B5A64 /* GameOverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverController.swift; sourceTree = "<group>"; };
+		03A0C4B5246AFA94008B5A64 /* Redux+notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Redux+notifications.swift"; sourceTree = "<group>"; };
 		0FD3272790AA1360AACB05AA /* Pods-The Walking Monster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking Monster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking Monster/Pods-The Walking Monster.debug.xcconfig"; sourceTree = "<group>"; };
 		1438A6683AA92E48CCE27DF8 /* Pods-The Walking MonsterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking MonsterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking MonsterUITests/Pods-The Walking MonsterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1703ADEBC4304EF5E46A0AE0 /* Pods_The_Walking_MonsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Walking_MonsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +182,7 @@
 				0398118A20ED333200DB8E85 /* Router.swift */,
 				0333B3EF20ED115B00C3AB68 /* OnboardingController.swift */,
 				0398119420EDA0FA00DB8E85 /* MainController.swift */,
+				03A0C4B3246ACDF7008B5A64 /* GameOverController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				0333B41D20ED124500C3AB68 /* Redux.swift */,
 				0398119620F2DFFC00DB8E85 /* Redux+storage.swift */,
 				0333B41F20ED128300C3AB68 /* Actions.swift */,
+				03A0C4B5246AFA94008B5A64 /* Redux+notifications.swift */,
 				0333B42120ED12E600C3AB68 /* State.swift */,
 				0333B42320ED134000C3AB68 /* Subscriber.swift */,
 			);
@@ -639,12 +645,14 @@
 			files = (
 				0333B3F020ED115B00C3AB68 /* OnboardingController.swift in Sources */,
 				0333B42020ED128300C3AB68 /* Actions.swift in Sources */,
+				03A0C4B4246ACDF7008B5A64 /* GameOverController.swift in Sources */,
 				0398119520EDA0FA00DB8E85 /* MainController.swift in Sources */,
 				0333B3EE20ED115B00C3AB68 /* AppDelegate.swift in Sources */,
 				0398118B20ED333200DB8E85 /* Router.swift in Sources */,
 				0333B42420ED134000C3AB68 /* Subscriber.swift in Sources */,
 				0398119720F2DFFC00DB8E85 /* Redux+storage.swift in Sources */,
 				0398118F20ED77EC00DB8E85 /* Colors.swift in Sources */,
+				03A0C4B6246AFA94008B5A64 /* Redux+notifications.swift in Sources */,
 				0333B42220ED12E600C3AB68 /* State.swift in Sources */,
 				0333B41E20ED124500C3AB68 /* Redux.swift in Sources */,
 			);

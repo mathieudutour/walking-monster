@@ -211,22 +211,22 @@
             </objects>
             <point key="canvasLocation" x="2829.5999999999999" y="621.13943028485767"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Over Controller-->
         <scene sceneID="8sw-3B-9ju">
             <objects>
-                <viewController storyboardIdentifier="GameOver" id="rrO-g0-Puh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameOver" id="rrO-g0-Puh" customClass="GameOverController" customModule="The_Walking_Monster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="waY-B7-ZvV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got caugth by the Gluton monster. The was a fun ride tho!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhj-0q-rs4">
-                                <rect key="frame" x="16" y="216" width="343" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I finally caught you. The was a fun ride tho!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhj-0q-rs4">
+                                <rect key="frame" x="16" y="216" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="Primary"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You escaped it for LABEL. That's impressive." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc8-H5-5vr">
-                                <rect key="frame" x="12" y="265" width="343" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You escaped me for LABEL. That's impressive." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc8-H5-5vr">
+                                <rect key="frame" x="12" y="244.5" width="343" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="Primary"/>
                                 <nil key="highlightedColor"/>
@@ -252,6 +252,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onGetStarted:" destination="kFL-1d-RTZ" eventType="touchUpInside" id="34R-jx-rvb"/>
+                                    <action selector="onShare:" destination="rrO-g0-Puh" eventType="touchUpInside" id="w4h-SW-Ure"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -272,6 +273,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ziv-2S-wec"/>
                     </view>
+                    <connections>
+                        <outlet property="result" destination="Uc8-H5-5vr" id="c6r-2H-Qx5"/>
+                        <outlet property="share" destination="lNZ-Pk-ZNJ" id="HmZ-4X-uyL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ve-An-MpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -63,6 +63,7 @@ extension State {
     if stepsLeft <= 0 {
       self.stepsLeft = 0
       endDate = NSDate() as Date
+      Redux.sendNotification(identifier: "walking-monster.fail", title: "Oh no! The Walking Monster caught you!")
     } else {
       self.stepsLeft = stepsLeft
     }

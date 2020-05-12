@@ -24,6 +24,8 @@
 	<string>We need access to your daily steps to see if you can outpace the monster.</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>We need access to your daily steps to see if you can outpace the monster.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>We need access to your daily steps to see if you can outpace the monster.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>

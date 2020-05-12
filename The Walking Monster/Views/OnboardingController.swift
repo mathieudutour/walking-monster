@@ -85,20 +85,10 @@ extension OnboardingController {
 
     notificationPrimer.actionHandler = { item in
       item.manager?.displayActivityIndicator(color: BACKGROUND_COLOR)
-      UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { _, error in
-        if let error = error {
-          // TODO:
-          print(error)
-          DispatchQueue.main.async {
-            Redux.onboardingDone()
-            item.manager?.dismissBulletin(animated: true)
-          }
-        } else {
-          DispatchQueue.main.async {
-            UIApplication.shared.registerForRemoteNotifications()
-            Redux.onboardingDone()
-            item.manager?.dismissBulletin(animated: true)
-          }
+      Redux.requestNotifications { _ in
+        DispatchQueue.main.async {
+          Redux.onboardingDone()
+          item.manager?.dismissBulletin(animated: true)
         }
       }
     }

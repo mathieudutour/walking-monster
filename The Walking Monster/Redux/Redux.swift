@@ -1,7 +1,7 @@
 import HealthKit
 import UIKit
 
-class Redux {
+class Redux: NSObject {
   static let sharedInstance: Redux = {
     let instance = Redux()
     return instance
@@ -16,8 +16,10 @@ class Redux {
   var previousState = State()
   var state = State()
 
-  init() {
+  override init() {
+    super.init()
     initialState()
+    UNUserNotificationCenter.current().delegate = self
   }
 
   func dispatch() {

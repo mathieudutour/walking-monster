@@ -35,8 +35,6 @@ jobs:
         uses: einaregilsson/build-number@v1
         with:
           token: ${{secrets.github_token}}
-      - name: Install Pods
-        run: pod install
       - name: build	and beta release
         run: bundle exec fastlane ios beta
         env:

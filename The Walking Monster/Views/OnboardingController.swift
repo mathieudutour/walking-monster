@@ -39,7 +39,7 @@ extension OnboardingController {
     healthkitPrimer.imageAccessibilityLabel = "Steps Icon"
 
     healthkitPrimer.appearance.actionButtonColor = PRIMARY_COLOR
-    healthkitPrimer.appearance.actionButtonTitleColor = WHITE
+    healthkitPrimer.appearance.actionButtonTitleColor = BACKGROUND_COLOR
 
     healthkitPrimer.actionHandler = { item in
       item.manager?.displayActivityIndicator(color: BACKGROUND_COLOR)
@@ -74,7 +74,7 @@ extension OnboardingController {
     notificationPrimer.imageAccessibilityLabel = "Notifications Icon"
 
     notificationPrimer.appearance.actionButtonColor = PRIMARY_COLOR
-    notificationPrimer.appearance.actionButtonTitleColor = WHITE
+    notificationPrimer.appearance.actionButtonTitleColor = BACKGROUND_COLOR
     notificationPrimer.appearance.alternativeButtonTitleColor = PRIMARY_COLOR
 
     notificationPrimer.presentationHandler = { item in

@@ -16,7 +16,9 @@ extension Redux: UNUserNotificationCenterDelegate {
   static func requestNotifications(complete: @escaping (_ error: Error?) -> Void) {
     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .alert]) { granted, error in
       if granted == true && error == nil {
-        UIApplication.shared.registerForRemoteNotifications()
+        DispatchQueue.main.async {
+          UIApplication.shared.registerForRemoteNotifications()
+        }
       }
       complete(error)
     }
@@ -25,26 +27,26 @@ extension Redux: UNUserNotificationCenterDelegate {
   static func sendNotification(identifier: String, title: String) {
     let center = UNUserNotificationCenter.current()
     center.getNotificationSettings { settings in
-        switch settings.authorizationStatus {
-        case .notDetermined:
-            break
-        case .authorized, .provisional:
-            let content = UNMutableNotificationContent()
-            content.title = title
+      switch settings.authorizationStatus {
+      case .notDetermined:
+        break
+      case .authorized, .provisional:
+        let content = UNMutableNotificationContent()
+        content.title = title
 
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-            let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
 
-            center.add(request) { error in
-              guard error == nil else {
-                print(error!)
-                return
-              }
-              print("Scheduling notification with id: \(identifier)")
-            }
-        default:
-            break
+        center.add(request) { error in
+          guard error == nil else {
+            print(error!)
+            return
+          }
+          print("Scheduling notification with id: \(identifier)")
         }
+      default:
+        break
+      }
     }
   }
 }

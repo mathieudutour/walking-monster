@@ -21,7 +21,7 @@ class GameOverController: UIViewController, Subscriber {
       self.result.text = "You escaped me for \(Int(endDate.timeIntervalSince(startDate) / 3600)) hours - or \(state.stepsSinceLaunch) steps. That's impressive."
     }
   }
-  
+
   @IBAction func onShare(_ sender: Any) {
     guard let startDate = Redux.sharedInstance.state.firstLaunch, let endDate = Redux.sharedInstance.state.endDate else {
       return
@@ -36,6 +36,6 @@ class GameOverController: UIViewController, Subscriber {
     let activityViewController = UIActivityViewController(activityItems: [text, website], applicationActivities: nil)
 
     // present the view controller
-    self.present(activityViewController, animated: true, completion: nil)
+    present(activityViewController, animated: true)
   }
 }
